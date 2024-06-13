@@ -12,6 +12,11 @@ body {
   padding-right: 10%;
 }
 
+.sub-heading, .describing-text, .call-to-action {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -54,4 +59,31 @@ a:link, a:visited, a:active {
 .hero-secondary {
   color: #E5E7EB;
   font-size: 18px;
+}
+
+.sub-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+.information-header {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
+}
+
+.random-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.some-text-and-image {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
