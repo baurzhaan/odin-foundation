@@ -106,3 +106,28 @@ a:link, a:visited, a:active {
   text-align: right;
   font-size: large;
 }
+
+.inner-call-to-action {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3882F6;
+  color: #F9FAF8;
+  padding: 10px 100px 10px 50px;
+  align-items: center;
+  margin: 40px 0 40px 0;
+}
+
+.sign-up-button-2 {
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px 20px 5px 20px;
+  background-color: #3882F6;
+  border-color: #E5E7EB;
+  height: 30px;
+  color: #F9FAF8;
+}
+
+#call-to-action-text {
+  font-weight: bolder;
+  font-size: larger;
+}
