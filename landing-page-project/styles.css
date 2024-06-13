@@ -1,3 +1,27 @@
-* {
+/* * {
   border: 2px solid red;
+} */
+
+body {
+  margin: 0;
+}
+
+.header, .heading, .footer {
+  background-color: #1F2937;
+}
+
+.header {
+  padding: 0 10% 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+a:link, a:visited, a:active {
+  color: #F9FAF8;
 }
