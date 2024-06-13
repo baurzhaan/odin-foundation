@@ -131,3 +131,10 @@ a:link, a:visited, a:active {
   font-weight: bolder;
   font-size: larger;
 }
+
+.footer {
+  color: #F9FAF8;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
