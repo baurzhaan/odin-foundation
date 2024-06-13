@@ -25,7 +25,7 @@ body {
 .header-links {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
   color: #E5E7EB;
   font-size: 18px;
 }
@@ -86,4 +86,23 @@ a:link, a:visited, a:active {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.describing-text {
+  background-color: #E5E7EB;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.quote-text {
+  font-family: "Italianno", cursive, serif;
+  color: #1F2937;
+  font-size: 36px;
+  text-align: left;
+}
+
+.quote-author {
+  font-weight: bold;
+  text-align: right;
+  font-size: large;
 }
