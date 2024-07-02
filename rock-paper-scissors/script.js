@@ -20,16 +20,17 @@ function playRound(humanChoice, computerChoice) {
   };
 };
 
-function playGame(event) {
-    console.log(event.target.textContent);
+function playGame() {
     if (countGame >= 5) return 0;
-    playerMove.textContent = btnRock.textContent;
+    // playerMove.textContent = btnRock.textContent;
+    playerMove.textContent = this.textContent;
     countGame += 1;
     roundLabel.textContent = countGame;
     let computerMove = getComputerChoice();
     computerMoveLabel.textContent = computerMove;
-    let roundWinner = playRound(btnRock.textContent.toLowerCase(), computerMove.toLowerCase());
-  
+    // let roundWinner = playRound(btnRock.textContent.toLowerCase(), computerMove.toLowerCase());
+    let roundWinner = playRound(this.textContent.toLowerCase(), computerMove.toLowerCase());
+
     if (roundWinner.toLowerCase() == 'you') {
       humanScore += 1;
       playerScoreLabel.textContent = humanScore;
@@ -46,7 +47,8 @@ function playGame(event) {
       } else {
         gameResult.textContent = `\tEven score! The score is ${humanScore} - ${computerScore}. Try again!`;
       };
-      btnRock.disabled = true;
+      // btnRock.disabled = true;
+      this.disabled = true;
   };
 };
 
@@ -62,4 +64,8 @@ const computerScoreLabel = document.getElementById("computerScoreLabel");
 const gameResult = document.getElementById("gameResult");
 
 const btnRock = document.getElementById("btnRock");
-btnRock.addEventListener('click', playGame);
+btnRock.addEventListener("click", playGame);
+const btnPaper = document.getElementById("btnPaper");
+btnPaper.addEventListener("click", playGame);
+const btnScissors = document.getElementById("btnScissors");
+btnScissors.addEventListener("click", playGame);
