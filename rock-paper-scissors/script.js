@@ -7,61 +7,60 @@ function getComputerChoice() {
   };
 };
 
-function playRound(humanChoice, computerChoice) {
+function playRound(playerMove, computerMove) {
   switch (true) {
-    case humanChoice == computerChoice: return 'No one';
-    case humanChoice == 'rock' && computerChoice == 'paper': return 'Computer';
-    case humanChoice == 'rock' && computerChoice == 'scissors': return 'You';
-    case humanChoice == 'paper' && computerChoice == 'rock': return 'You';
-    case humanChoice == 'paper' && computerChoice == 'scissors': return 'Computer';
-    case humanChoice == 'scissors' && computerChoice == 'rock': return 'Computer';
-    case humanChoice == 'scissors' && computerChoice == 'paper': return 'You';
-    default: return 'Something went wrong!';
+    case playerMove == computerMove: return 'draw';
+    case playerMove == 'rock' && computerMove == 'paper': return 'computer';
+    case playerMove == 'rock' && computerMove == 'scissors': return 'player';
+    case playerMove == 'paper' && computerMove == 'rock': return 'player';
+    case playerMove == 'paper' && computerMove == 'scissors': return 'computer';
+    case playerMove == 'scissors' && computerMove == 'rock': return 'computer';
+    case playerMove == 'scissors' && computerMove == 'paper': return 'player';
+    default: return 'ERROR!';
   };
 };
 
 function playGame() {
-    if (countGame >= 5) return 0;
-    // playerMove.textContent = btnRock.textContent;
-    playerMove.textContent = this.textContent;
-    countGame += 1;
-    roundLabel.textContent = countGame;
+    if (roundCount >= 5) return 0;
+    playerMoveLabel.textContent = this.textContent.toLowerCase();
+    roundCount += 1;
+    roundCountLabel.textContent = roundCount;
     let computerMove = getComputerChoice();
     computerMoveLabel.textContent = computerMove;
-    // let roundWinner = playRound(btnRock.textContent.toLowerCase(), computerMove.toLowerCase());
-    let roundWinner = playRound(this.textContent.toLowerCase(), computerMove.toLowerCase());
+    let roundWinner = playRound(this.textContent.toLowerCase(), computerMove);
 
-    if (roundWinner.toLowerCase() == 'you') {
-      humanScore += 1;
-      playerScoreLabel.textContent = humanScore;
-    } else if (roundWinner.toLowerCase() == 'computer') {
+    if (roundWinner == 'player') {
+      playerScore += 1;
+      playerScoreLabel.textContent = playerScore;
+    } else if (roundWinner == 'computer') {
       computerScore += 1;
       computerScoreLabel.textContent = computerScore;
     };
   
-    if (countGame == 5) {
-      if (humanScore > computerScore) {
-        gameResult.textContent = `\tYou won the game! The score is ${humanScore} - ${computerScore}`;
-      } else if (humanScore < computerScore) {
-        gameResult.textContent = `\tYou lost the game! The score is ${humanScore} - ${computerScore}`;
+    if (roundCount == 5) {
+      if (playerScore > computerScore) {
+        gameResult.textContent = `\t${playerScore} - ${computerScore}. Player wins!`;
+      } else if (playerScore < computerScore) {
+        gameResult.textContent = `\t${computerScore} - ${playerScore}. Computer wins!`;
       } else {
-        gameResult.textContent = `\tEven score! The score is ${humanScore} - ${computerScore}. Try again!`;
+        gameResult.textContent = `\t${playerScore} - ${computerScore}. Draw!`;
       };
-      // btnRock.disabled = true;
-      this.disabled = true;
+      btnRock.disabled = true;
+      btnPaper.disabled = true;
+      btnScissors.disabled = true;
   };
 };
 
-let humanScore = 0;
+let roundCount = 0;
+let playerScore = 0;
 let computerScore = 0;
-let countGame = 0;
 
-const roundLabel = document.getElementById("round");
-const playerMove = document.getElementById("playerMove");
+const roundCountLabel = document.getElementById("roundCount");
+const playerMoveLabel = document.getElementById("playerMoveLabel");
 const computerMoveLabel = document.getElementById("computerMoveLabel");
 const playerScoreLabel = document.getElementById("playerScoreLabel");
 const computerScoreLabel = document.getElementById("computerScoreLabel");
-const gameResult = document.getElementById("gameResult");
+const gameResult = document.getElementById("gameResultLabel");
 
 const btnRock = document.getElementById("btnRock");
 btnRock.addEventListener("click", playGame);
@@ -69,3 +68,21 @@ const btnPaper = document.getElementById("btnPaper");
 btnPaper.addEventListener("click", playGame);
 const btnScissors = document.getElementById("btnScissors");
 btnScissors.addEventListener("click", playGame);
+
+const btnReset = document.getElementById("btnReset");
+btnReset.addEventListener("click", () => {
+  btnRock.disabled = false;
+  btnPaper.disabled = false;
+  btnScissors.disabled = false;
+  
+  roundCount = 0;
+  playerScore = 0;
+  computerScore = 0;
+  
+  roundCountLabel.textContent = 0;
+  playerMoveLabel.textContent = "---";
+  computerMoveLabel.textContent = "---";
+  playerScoreLabel.textContent = 0;
+  computerScoreLabel.textContent = 0;
+  gameResult.textContent = "---";
+});
