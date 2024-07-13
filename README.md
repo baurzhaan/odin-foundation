@@ -24,7 +24,7 @@ It is a console version of the program, so run it with Developer Tools open.
 [Project Link](https://baurzhaan.github.io/odin-foundation/rock-paper-scissors/index.html#)
   
   
-**Etch a Sketch**
+**Etch a Sketch project. DOM manipulation skills**
 
 [Project Code Link](https://github.com/baurzhaan/odin-foundation/tree/main/etch-a-sketch)
 
