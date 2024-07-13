@@ -16,9 +16,16 @@ Foundation course of The Odin Project
 [Project Link](https://baurzhaan.github.io/odin-foundation/landing-page-project/index.html)
   
   
-**Rock Paper Scissors project (first JS project)**  
+**Rock Paper Scissors project (first JS project)**
 It is a console version of the program, so run it with Developer Tools open.
 
 [Project Code Link](https://github.com/baurzhaan/odin-foundation/tree/main/rock-paper-scissors)
 
 [Project Link](https://baurzhaan.github.io/odin-foundation/rock-paper-scissors/index.html#)
+  
+  
+**Etch a Sketch**
+
+[Project Code Link](https://github.com/baurzhaan/odin-foundation/tree/main/etch-a-sketch)
+
+[Project Link](https://baurzhaan.github.io/odin-foundation/etch-a-sketch/index.html#)
