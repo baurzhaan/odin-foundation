@@ -1,6 +1,6 @@
-function addDivs(noOfSquares = 16, container) {
-  let gameBoardSize = noOfSquares * noOfSquares;
-  for (let i = 0; i < gameBoardSize; i++) {
+function addDivs(sizeOfGameBoard = 16, container) {
+  let fullGameBoardSize = sizeOfGameBoard * sizeOfGameBoard;
+  for (let i = 0; i < fullGameBoardSize; i++) {
     let div = document.createElement("div");
     div.className = "div_cell";
     container.append(div);
@@ -13,33 +13,31 @@ function addDivs(noOfSquares = 16, container) {
     div_cell.style.height = "100%";
     div_cell.style.boxSizing = "border-box";
     div_cell.style.border = "1px solid gray";
-    div_cell.style.width = `${100 / noOfSquares}%`;
+    div_cell.style.width = `${100 / sizeOfGameBoard}%`;
     div_cell.addEventListener("mouseover", function() {
       this.style.backgroundColor = "blue";
     });
   };
 };
 
-let noOfSquares = 16;
+let sizeOfGameBoard = 16;
 
-const btnSetNoOfSquares = document.createElement("button");
-btnSetNoOfSquares.textContent = "Set size of game board (< 100)";
-btnSetNoOfSquares.id = "btnSetNoOfSquares";
-btnSetNoOfSquares.style.backgroundColor = "yellow";
-btnSetNoOfSquares.style.margin = "10px";
-btnSetNoOfSquares.style.fontSize = "20px";
+const btnSetsizeOfGameBoard = document.createElement("button");
+btnSetsizeOfGameBoard.textContent = "Set size of game board (< 100)";
+btnSetsizeOfGameBoard.style.backgroundColor = "yellow";
+btnSetsizeOfGameBoard.style.margin = "10px";
+btnSetsizeOfGameBoard.style.fontSize = "20px";
 
-btnSetNoOfSquares.addEventListener("click", function(){
-  noOfSquares = prompt("Enter number of squares", 16);
-  if (noOfSquares > 100) noOfSquares = 100;
-  if (typeof(noOfSquares) == 'string')  {
+btnSetsizeOfGameBoard.addEventListener("click", function(){
+  sizeOfGameBoard = prompt("Enter number of squares", 16);
+  if (sizeOfGameBoard > 100) sizeOfGameBoard = 100;
+  if (typeof(sizeOfGameBoard) == 'string') {
     container.replaceChildren();
-    addDivs(noOfSquares, container);
-  } 
-  console.log(typeof(noOfSquares));
+    addDivs(sizeOfGameBoard, container);
+  };
 });
 
-document.body.prepend(btnSetNoOfSquares);
+document.body.prepend(btnSetsizeOfGameBoard);
 
 container = document.getElementById("container");
 container.style.display = "flex";
@@ -47,4 +45,4 @@ container.style.flexFlow = "row wrap";
 container.style.justifyContent = "space-around";
 container.style.textAlign = "center";
 
-addDivs(noOfSquares, container);
+addDivs(sizeOfGameBoard, container);
