@@ -29,7 +29,7 @@ btnSetsizeOfGameBoard.style.margin = "10px";
 btnSetsizeOfGameBoard.style.fontSize = "20px";
 
 btnSetsizeOfGameBoard.addEventListener("click", function(){
-  sizeOfGameBoard = prompt("Enter number of squares", 16);
+  sizeOfGameBoard = prompt("Enter number of squares on one side", 16);
   if (sizeOfGameBoard > 100) sizeOfGameBoard = 100;
   if (typeof(sizeOfGameBoard) == 'string') {
     container.replaceChildren();
