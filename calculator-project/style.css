@@ -51,14 +51,7 @@
   box-sizing: border-box;
 }
 
-/* #button-1 {
-  height: 25%;
-  border: 1px solid red;
-  color: green;
-  box-sizing: border-box;
-} */
-
-#button-equal {
+#button-result {
   height: 50%;
   border: 1px solid red;
   color: green;
