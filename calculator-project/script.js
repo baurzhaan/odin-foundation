@@ -115,3 +115,22 @@ let button_result = document.getElementById("button-result");button_result.addEv
   display.textContent = "=";
 });
 
+let button_ac = document.getElementById("button-ac");
+button_ac.addEventListener("click", function() {
+  display.textContent = "";
+});
+
+let button_negate = document.getElementById("button-negate");
+button_negate.addEventListener("click", function() {
+  display.textContent = "+/-";
+});
+
+let button_percent = document.getElementById("button-percent");
+button_percent.addEventListener("click", function() {
+  display.textContent = "%";
+});
+
+let button_dot = document.getElementById("button-dot");
+button_dot.addEventListener("click", function() {
+  display.textContent = ".";
+});
