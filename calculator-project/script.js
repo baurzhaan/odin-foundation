@@ -37,6 +37,14 @@ function operate(operator, number1, number2){
   return result;
 };
 
+function debug_it() {
+  console.log('#####################')
+  console.log(`Number1: ${number1}`);
+  console.log(`Number2: ${number2}`);
+  console.log(`Operator: ${operator}`);
+  console.log(`Result: ${result}`);
+};
+
 let display = document.getElementById("display");
 let number1 = null, number2 = null, operator = null, result = null;
 
@@ -56,12 +64,7 @@ button_result.addEventListener("click", () => {
   display.textContent = result;
   number1 = result;
 
-  // debug
-  console.log('#####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_ac = document.getElementById("button-ac");
@@ -71,12 +74,7 @@ button_ac.addEventListener("click", function() {
   operator = null;
   display.textContent = '0';
   
-  // debug
-  console.log('#####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_1 = document.getElementById("button-1");
@@ -95,12 +93,7 @@ button_1.addEventListener("click", function() {
     display.textContent = number2;
   };
   
-  // debug
-  console.log('#####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_2 = document.getElementById("button-2");
@@ -119,12 +112,7 @@ button_2.addEventListener("click", function() {
     display.textContent = number2;
   };
   
-  // debug
-  console.log('#####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_3 = document.getElementById("button-3");
@@ -143,12 +131,7 @@ button_3.addEventListener("click", function() {
     display.textContent = number2;
   };
   
-  // debug
-  console.log('#####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_4 = document.getElementById("button-4");
@@ -167,12 +150,7 @@ button_4.addEventListener("click", function() {
     display.textContent = number2;
   };
   
-  // debug
-  console.log('#####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_5 = document.getElementById("button-5");
@@ -191,12 +169,7 @@ button_5.addEventListener("click", function() {
     display.textContent = number2;
   };
   
-  // debug
-  console.log('#####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_6 = document.getElementById("button-6");
@@ -215,12 +188,7 @@ button_6.addEventListener("click", function() {
     display.textContent = number2;
   };
   
-  // debug
-  console.log('#####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_7 = document.getElementById("button-7");
@@ -239,12 +207,7 @@ button_7.addEventListener("click", function() {
     display.textContent = number2;
   };
   
-  // debug
-  console.log('#####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_8 = document.getElementById("button-8");
@@ -263,12 +226,7 @@ button_8.addEventListener("click", function() {
     display.textContent = number2;
   };
 
-  // debug
-  console.log('#####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_9 = document.getElementById("button-9");
@@ -287,12 +245,7 @@ button_9.addEventListener("click", function() {
     display.textContent = number2;
   };
   
-  // debug
-  console.log('#####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_0 = document.getElementById("button-0");
@@ -313,12 +266,7 @@ button_0.addEventListener("click", () => {
     display.textContent = number2;
   }
 
-  // debug
-  console.log('#####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_add = document.getElementById("button-add");
@@ -326,12 +274,7 @@ button_add.addEventListener("click", function() {
   if (number1 || number1 == 0) operator = operators.addition;
   number2 = null;
   
-  // debug
-  console.log('add #####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_subtract = document.getElementById("button-subtract");
@@ -339,12 +282,7 @@ button_subtract.addEventListener("click", function() {
   if (number1 || number1 == 0) operator = operators.subtraction;
   number2 = null;
 
-  // debug
-  console.log('#####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_multiply = document.getElementById("button-multiply");
@@ -352,12 +290,7 @@ button_multiply.addEventListener("click", function() {
   if (number1 || number1 == 0) operator = operators.multiplication;
   number2 = null;
 
-  // debug
-  console.log('#####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_divide = document.getElementById("button-divide");
@@ -365,12 +298,7 @@ button_divide.addEventListener("click", function() {
   if (number1 || number1 == 0) operator = operators.division;
   number2 = null;
 
-  // debug
-  console.log('#####################')
-  console.log(`Number1: ${number1}`);
-  console.log(`Number2: ${number2}`);
-  console.log(`Operator: ${operator}`);
-  console.log(`Result: ${result}`);
+  debug_it();
 });
 
 let button_negate = document.getElementById("button-negate");
