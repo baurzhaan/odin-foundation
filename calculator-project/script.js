@@ -16,8 +16,6 @@ function operate(operator, number1, number2){
     return "error in =divide= function";
   };
 
-  let result = 0;
-
   switch(operator) {
     case '+':
       result = add(number1, number2);
@@ -43,6 +41,22 @@ function debug_it() {
   console.log(`Number2: ${number2}`);
   console.log(`Operator: ${operator}`);
   console.log(`Result: ${result}`);
+};
+
+function display_number(number) {
+  if (number1 == null || number1 == 0) {
+    number1 = number;
+    display.textContent = number1;
+  } else if (operator == null) {
+    number1 = number1 + number;
+    display.textContent = number1;
+  } else if (number2 == null || number2 == 0) {
+    number2 = number;
+    display.textContent = number2;
+  } else {
+    number2 = number2 + number;
+    display.textContent = number2;
+  };
 };
 
 let display = document.getElementById("display");
@@ -71,6 +85,7 @@ button_ac.addEventListener("click", () => {
   number1 = null;
   number2 = null;
   operator = null;
+  result = null;
   display.textContent = '0';
   
   debug_it();
@@ -78,171 +93,63 @@ button_ac.addEventListener("click", () => {
 
 let button_1 = document.getElementById("button-1");
 button_1.addEventListener("click", () => {
-  if (number1 == null || number1 == 0) {
-    number1 = '1';
-    display.textContent = number1;
-  } else if (operator == null) {
-    number1 = number1 + '1';
-    display.textContent = number1;
-  } else if (number2 == null || number2 == 0) {
-    number2 = '1';
-    display.textContent = number2;
-  } else {
-    number2 = number2 + '1';
-    display.textContent = number2;
-  };
-  
+  display_number('1');
+
   debug_it();
 });
 
 let button_2 = document.getElementById("button-2");
 button_2.addEventListener("click", () => {
-  if (number1 == null || number1 == 0) {
-    number1 = '2';
-    display.textContent = number1;
-  } else if (operator == null) {
-    number1 = number1 + '2';
-    display.textContent = number1;
-  } else if (number2 == null || number2 == 0) {
-    number2 = '2';
-    display.textContent = number2;
-  } else {
-    number2 = number2 + '2';
-    display.textContent = number2;
-  };
+  display_number('2');
   
   debug_it();
 });
 
 let button_3 = document.getElementById("button-3");
 button_3.addEventListener("click", () => {
-  if (number1 == null || number1 == 0) {
-    number1 = '3';
-    display.textContent = number1;
-  } else if (operator == null) {
-    number1 = number1 + '3';
-    display.textContent = number1;
-  } else if (number2 == null || number2 == 0) {
-    number2 = '3';
-    display.textContent = number2;
-  } else {
-    number2 = number2 + '3';
-    display.textContent = number2;
-  };
+  display_number('3');
   
   debug_it();
 });
 
 let button_4 = document.getElementById("button-4");
 button_4.addEventListener("click", () => {
-  if (number1 == null || number1 == 0) {
-    number1 = '4';
-    display.textContent = number1;
-  } else if (operator == null) {
-    number1 = number1 + '4';
-    display.textContent = number1;
-  } else if (number2 == null || number2 == 0) {
-    number2 = '4';
-    display.textContent = number2;
-  } else {
-    number2 = number2 + '4';
-    display.textContent = number2;
-  };
+  display_number('4');
   
   debug_it();
 });
 
 let button_5 = document.getElementById("button-5");
 button_5.addEventListener("click", () => {
-  if (number1 == null || number1 == 0) {
-    number1 = '5';
-    display.textContent = number1;
-  } else if (operator == null) {
-    number1 = number1 + '5';
-    display.textContent = number1;
-  } else if (number2 == null || number2 == 0) {
-    number2 = '5';
-    display.textContent = number2;
-  } else {
-    number2 = number2 + '5';
-    display.textContent = number2;
-  };
+  display_number('5');
   
   debug_it();
 });
 
 let button_6 = document.getElementById("button-6");
 button_6.addEventListener("click", () => {
-  if (number1 == null || number1 == 0) {
-    number1 = '6';
-    display.textContent = number1;
-  } else if (operator == null) {
-    number1 = number1 + '6';
-    display.textContent = number1;
-  } else if (number2 == null || number2 == 0) {
-    number2 = '6';
-    display.textContent = number2;
-  } else {
-    number2 = number2 + '6';
-    display.textContent = number2;
-  };
+  display_number('6');
   
   debug_it();
 });
 
 let button_7 = document.getElementById("button-7");
 button_7.addEventListener("click", () => {
-  if (number1 == null || number1 == 0) {
-    number1 = '7';
-    display.textContent = number1;
-  } else if (operator == null) {
-    number1 = number1 + '7';
-    display.textContent = number1;
-  } else if (number2 == null || number2 == 0) {
-    number2 = '7';
-    display.textContent = number2;
-  } else {
-    number2 = number2 + '7';
-    display.textContent = number2;
-  };
+  display_number('7');
   
   debug_it();
 });
 
 let button_8 = document.getElementById("button-8");
 button_8.addEventListener("click", () => {
-  if (number1 == null || number1 == 0) {
-    number1 = '8';
-    display.textContent = number1;
-  } else if (operator == null) {
-    number1 = number1 + '8';
-    display.textContent = number1;
-  } else if (number2 == null || number2 == 0) {
-    number2 = '8';
-    display.textContent = number2;
-  } else {
-    number2 = number2 + '8';
-    display.textContent = number2;
-  };
+  display_number('8');
 
   debug_it();
 });
 
 let button_9 = document.getElementById("button-9");
 button_9.addEventListener("click", () => {
-  if (number1 == null || number1 == 0) {
-    number1 = '9';
-    display.textContent = number1;
-  } else if (operator == null) {
-    number1 = number1 + '9';
-    display.textContent = number1;
-  } else if (number2 == null || number2 == 0) {
-    number2 = '9';
-    display.textContent = number2;
-  } else {
-    number2 = number2 + '9';
-    display.textContent = number2;
-  };
+  display_number('9');
   
   debug_it();
 });
