@@ -41,91 +41,11 @@
 			"typeName": "document"
 		},
 		{
-			"id": "pointer:pointer",
-			"typeName": "pointer",
-			"x": 365.91170317568316,
-			"y": 333.3824372908367,
-			"lastActivityTimestamp": 1724320389301,
-			"meta": {}
-		},
-		{
 			"meta": {},
 			"id": "page:page",
 			"name": "Page 1",
 			"index": "a1",
 			"typeName": "page"
-		},
-		{
-			"followingUserId": null,
-			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:geo": "rectangle",
-				"tldraw:textAlign": "end",
-				"tldraw:arrowheadStart": "bar"
-			},
-			"brush": null,
-			"scribbles": [],
-			"cursor": {
-				"type": "default",
-				"rotation": 0
-			},
-			"isFocusMode": false,
-			"exportBackground": true,
-			"isDebugMode": false,
-			"isToolLocked": false,
-			"screenBounds": {
-				"x": 0,
-				"y": 0,
-				"w": 700,
-				"h": 762
-			},
-			"insets": [
-				false,
-				false,
-				true,
-				false
-			],
-			"zoomBrush": null,
-			"isGridMode": false,
-			"isPenMode": false,
-			"chatMessage": "",
-			"isChatting": false,
-			"highlightedUserIds": [],
-			"isFocused": true,
-			"devicePixelRatio": 1,
-			"isCoarsePointer": false,
-			"isHoveringCanvas": true,
-			"openMenus": [],
-			"isChangingStyle": false,
-			"isReadonly": false,
-			"meta": {},
-			"duplicateProps": null,
-			"id": "instance:instance",
-			"currentPageId": "page:page",
-			"typeName": "instance"
-		},
-		{
-			"editingShapeId": "shape:sa1SX98zTmIHMP4lp6XTA",
-			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:sa1SX98zTmIHMP4lp6XTA"
-			],
-			"hoveredShapeId": "shape:sa1SX98zTmIHMP4lp6XTA",
-			"erasingShapeIds": [],
-			"hintingShapeIds": [],
-			"focusedGroupId": null,
-			"meta": {},
-			"id": "instance_page_state:page:page",
-			"pageId": "page:page",
-			"typeName": "instance_page_state"
-		},
-		{
-			"x": 218.13196813917074,
-			"y": 88.7209387885002,
-			"z": 0.4664141799306437,
-			"meta": {},
-			"id": "camera:page:page",
-			"typeName": "camera"
 		},
 		{
 			"meta": {},
@@ -307,10 +227,10 @@
 			"id": "shape:sa1SX98zTmIHMP4lp6XTA",
 			"type": "text",
 			"props": {
-				"color": "black",
+				"color": "red",
 				"size": "m",
 				"w": 970.46875,
-				"text": "1. create index.html, style.css and script.js files and link them together. DONE.\n2. Create \"add\" function. DONE.\n3. Create \"substract\" function. DONE.\n4. Create \"multiply\" function. DONE.\n5. Create \"divide\" function. DONE.\n6. create three variables: number1, number2, and a operation. DONE.\n7. draw the calculator. DONE.\n8. ",
+				"text": "1. create index.html, style.css and script.js files and link them together. DONE.\n2. Create \"add\" function. DONE.\n3. Create \"substract\" function. DONE.\n4. Create \"multiply\" function. DONE.\n5. Create \"divide\" function. DONE.\n6. create three variables: number1, number2, and a operation. DONE.\n7. draw the calculator. DONE.\n8. make basic arithmetics work. DONE.\n9. Use result as a first number in a new calculation. DONE.\n10. Refactor code -> simplify\n11. Work with \"negate\" +/-\n12. Work with \"percent\"\n13. Work with floating point\n14. Locate display to the right side and middles of the screen\n15. Change UI: buttons\n16. Change UI: Display\n17. Change UI: borders and background\n",
 				"font": "draw",
 				"textAlign": "start",
 				"autoSize": true,
@@ -957,8 +877,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 263.596305615608,
-			"y": 783.3877930682656,
+			"x": 1427.1121728599787,
+			"y": 220.01604022410675,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -966,13 +886,13 @@
 			"id": "shape:haAsw3mxtT-WHroPpqI9L",
 			"type": "group",
 			"parentId": "page:page",
-			"index": "aP",
+			"index": "Zn2y7",
 			"props": {},
 			"typeName": "shape"
 		},
 		{
-			"x": -80.91487064544344,
-			"y": 635.7948841214977,
+			"x": 1066.8790181876714,
+			"y": 57.10049519021902,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -997,12 +917,12 @@
 				"scale": 1
 			},
 			"parentId": "page:page",
-			"index": "aQ",
+			"index": "Zo7zd",
 			"typeName": "shape"
 		},
 		{
-			"x": -66.74308241736128,
-			"y": 651.8158835883678,
+			"x": 1096.7727848270094,
+			"y": 88.4441307442089,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1020,7 +940,7 @@
 				"scale": 1
 			},
 			"parentId": "page:page",
-			"index": "aR",
+			"index": "Zu5pr",
 			"typeName": "shape"
 		},
 		{
@@ -1047,8 +967,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -11.566991972948045,
-			"y": 815.0568128764658,
+			"x": 1151.9488752714228,
+			"y": 251.68506003230686,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1066,12 +986,12 @@
 				"scale": 1
 			},
 			"parentId": "page:page",
-			"index": "aT",
+			"index": "Zv7E2",
 			"typeName": "shape"
 		},
 		{
-			"x": 113.46802172620468,
-			"y": 833.9909512573554,
+			"x": 1276.9838889705754,
+			"y": 270.6191984131965,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1101,7 +1021,7 @@
 				"scale": 1
 			},
 			"parentId": "page:page",
-			"index": "aQG",
+			"index": "Zt2BP",
 			"typeName": "shape"
 		},
 		{
@@ -1191,8 +1111,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -0.939647735018923,
-			"y": 879.8528332183549,
+			"x": 1162.5762195093519,
+			"y": 316.48108037419604,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1200,13 +1120,13 @@
 			"id": "shape:Pt6qMSv9dVlrWbgBJ-WVJ",
 			"type": "group",
 			"parentId": "page:page",
-			"index": "aV",
+			"index": "Zw4AZ",
 			"props": {},
 			"typeName": "shape"
 		},
 		{
-			"x": 281.3274365979702,
-			"y": 1345.7620748531494,
+			"x": 1444.843303842341,
+			"y": 782.3903220089906,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1224,12 +1144,12 @@
 				"scale": 1
 			},
 			"parentId": "page:page",
-			"index": "aW",
+			"index": "Zx6aJ",
 			"typeName": "shape"
 		},
 		{
-			"x": 397.2022227957477,
-			"y": 1347.5142846592953,
+			"x": 1560.7180900401186,
+			"y": 784.1425318151364,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1247,12 +1167,12 @@
 				"scale": 1
 			},
 			"parentId": "page:page",
-			"index": "aX",
+			"index": "Zy8wu",
 			"typeName": "shape"
 		},
 		{
-			"x": 540.8673562461202,
-			"y": 1350.3928641986074,
+			"x": 1704.383223490491,
+			"y": 787.0211113544485,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1270,12 +1190,12 @@
 				"scale": 1
 			},
 			"parentId": "page:page",
-			"index": "aY",
+			"index": "Zz9VS",
 			"typeName": "shape"
 		},
 		{
-			"x": 680.378641258427,
-			"y": 1346.203204122857,
+			"x": 1843.8945085027976,
+			"y": 782.8314512786981,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1293,12 +1213,12 @@
 				"scale": 1
 			},
 			"parentId": "page:page",
-			"index": "aZ",
+			"index": "a07BZ",
 			"typeName": "shape"
 		},
 		{
-			"x": 336.54893442264375,
-			"y": 1338.6413101080084,
+			"x": 1500.0648016670145,
+			"y": 775.2695572638495,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1328,12 +1248,12 @@
 				"scale": 1
 			},
 			"parentId": "page:page",
-			"index": "aQ8",
+			"index": "ZsBH9",
 			"typeName": "shape"
 		},
 		{
-			"x": 461.06517213120134,
-			"y": 1331.3244839273088,
+			"x": 1624.5810393755721,
+			"y": 767.95273108315,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1363,12 +1283,12 @@
 				"scale": 1
 			},
 			"parentId": "page:page",
-			"index": "aQ4",
+			"index": "Zr8Yh",
 			"typeName": "shape"
 		},
 		{
-			"x": 594.6428173517994,
-			"y": 1344.6562099220353,
+			"x": 1758.1586845961701,
+			"y": 781.2844570778764,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1398,12 +1318,12 @@
 				"scale": 1
 			},
 			"parentId": "page:page",
-			"index": "aQ2",
+			"index": "ZqBZa",
 			"typeName": "shape"
 		},
 		{
-			"x": 735.4591731710967,
-			"y": 1329.527825541301,
+			"x": 1898.9750404154674,
+			"y": 766.156072697142,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1433,8 +1353,87 @@
 				"scale": 1
 			},
 			"parentId": "page:page",
-			"index": "aQ1",
+			"index": "Zp3Lh",
 			"typeName": "shape"
+		},
+		{
+			"id": "pointer:pointer",
+			"typeName": "pointer",
+			"x": 854.1005310965896,
+			"y": 432.9716414445881,
+			"lastActivityTimestamp": 1726352924813,
+			"meta": {}
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {
+				"tldraw:color": "red",
+				"tldraw:size": "m"
+			},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "default",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 1392,
+				"h": 762
+			},
+			"insets": [
+				false,
+				false,
+				true,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"isFocused": true,
+			"devicePixelRatio": 1,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": true,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"editingShapeId": "shape:sa1SX98zTmIHMP4lp6XTA",
+			"croppingShapeId": null,
+			"selectedShapeIds": [
+				"shape:sa1SX98zTmIHMP4lp6XTA"
+			],
+			"hoveredShapeId": "shape:sa1SX98zTmIHMP4lp6XTA",
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"x": -24.574134659903955,
+			"y": 124.93525505915733,
+			"z": 0.5635180833400746,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
 		}
 	]
 }
