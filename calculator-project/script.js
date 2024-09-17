@@ -41,33 +41,55 @@ function debug_it() {
   console.log(`Number2: ${number2}`);
   console.log(`Operator: ${operator}`);
   console.log(`Result: ${result}`);
+  console.log(`Display: ${display_result.active_number}`)
 };
 
 function display_number(number) {
   if (number1 == null || number1 == 0) {
     number1 = number;
     display.textContent = number1;
+    return {
+      text_to_the_screen: number1,
+      active_number: 1
+    }
   } else if (operator == null) {
     number1 = number1 + number;
     display.textContent = number1;
+    return {
+      text_to_the_screen: number1,
+      active_number: 1
+    }
   } else if (number2 == null || number2 == 0) {
     number2 = number;
     display.textContent = number2;
+    return {
+      text_to_the_screen: number2,
+      active_number: 2
+    }
   } else {
     number2 = number2 + number;
     display.textContent = number2;
+    return {
+      text_to_the_screen: number2,
+      active_number: 2
+    }
   };
 };
 
 let display = document.getElementById("display");
 let number1 = null, number2 = null, operator = null, result = null;
+let display_result = {
+  text_to_the_screen: null,
+  active_number: null
+};
 
 let operators = {
   addition: '+',
   subtraction: '-',
   multiplication: '*',
   division: '/',
-  result: '='
+  result: '=',
+  negate: '+/-'
 };
 let operators_set = new Set(Object.values(operators));
 
@@ -91,10 +113,15 @@ button_ac.addEventListener("click", () => {
   debug_it();
 });
 
+let button_negate = document.getElementById("button-negate");
+button_negate.addEventListener("click", () => {
+  debug_it();
+});
+
 let button_1 = document.getElementById("button-1");
 button_1.addEventListener("click", () => {
-  display_number('1');
-
+  display_result = display_number('1');
+  console.log(display_result.active_number);
   debug_it();
 });
 
@@ -205,13 +232,6 @@ button_divide.addEventListener("click", () => {
   number2 = null;
 
   debug_it();
-});
-
-let button_negate = document.getElementById("button-negate");
-button_negate.addEventListener("click", () => {
-  operator = "+/-";
-  console.log(`operator = ${operator}`);
-  display.textContent = operator;
 });
 
 let button_percent = document.getElementById("button-percent");
